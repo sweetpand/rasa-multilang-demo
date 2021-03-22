@@ -15,6 +15,13 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+- intent: add_data
+  examples: |
+    - I want add some data to the excel sheet
+    - I want to add the user data to the excel sheet
+    - add user data
+    - ask me some questions to add the user data
+    - what information is required to add the data to excel sheet
 - intent: goodbye
   examples: |
     - good afternoon
@@ -47,56 +54,5 @@ nlu:
     - not really
     - vincent
     - vincent-mcvincent
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-- intent: request_names
-  examples: |
-    - i want to give you my name
-    - give name
-    - you need to know my name
-    - do you know my name?
 
-- intent: request_russian_lang
-  examples: |
-    - Russian
-
-- intent: request_kyrgyz_lang
-  examples: |
-    - Kyrgyz
 

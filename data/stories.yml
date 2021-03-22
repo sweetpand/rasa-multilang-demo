@@ -9,43 +9,27 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
+- story: store data to excel
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+    - intent: add_data
+    - active_loop: Form_Info
+    - slot_was_set:
+        - request_slot: name
+    - slot_was_set:
+        - request_slot: email
+    - slot_was_set:
+        - request_slot: number
+    - slot_was_set:
+        - request_slot: occupation
+    - slot_was_set:
+        - requested_slot: null
+    - active_loop: null
+    - action: utter_submit
+    - action: action_save_data
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
 
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: request_names
-  - action: name_form
-  - active_loop: name_form
-  - slot_was_set:
-    - requested_slot: first_name
-  - slot_was_set:
-    - first_name: Zhama
-  - slot_was_set:
-    - requested_slot: last_name
-  - slot_was_set:
-    - last_name: Ryskulova
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_submit
-  - action: utter_slots_values
+
+
+
+
+
